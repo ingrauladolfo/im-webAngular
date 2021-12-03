@@ -1,0 +1,47 @@
+<!-- <p>navbar works!</p> -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <!-- <div class="spacer">
+
+            <img src="../../../assets/images/logos/iam2.png" class="mt-2" width="50" height="50"
+                    alt="Logo Carmelita">
+        </div>
+         -->
+        <!-- <div class="spacer"></div>
+        <a class="nav-link" href="https://api.whatsapp.com/send?phone=+524434032424" target="_blank">
+            <i class="fab fa-whatsapp fa-lg" style="color:rgb(74,201,89);"></i>
+        </a>
+        <div class="spacer"></div>
+        <a class="nav-link" href="https://facebook.com" target="_blank">
+            <i
+class="fab fa-facebook fa-lg" style="color:rgb(66,103,178);"></i>
+        </a>
+        <div class="spacer"></div>
+        <a class="nav-link" href="https://instagram.com" target="_blank">
+            <i
+class="fab fa-instagram fa-lg" style="color:rgb(193,53,132);"></i>
+        </a> -->
+        
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/']">Inicio</button>
+    <button mat-menu-item [routerLink]="['acerca-de']">Acerca de</button>
+    <button mat-menu-item [routerLink]="['nuestro-catalogo']">Catálogo</button>
+    <button mat-menu-item [routerLink]="['juega']">Ruleta</button>
+     
+    <a mat-menu-item href="https://api.whatsapp.com/send?phone=+524434032424" target="_blank">
+        <i class="fab fa-whatsapp fa-lg" style="color:rgb(74,201,89);"></i>
+    </a>
+    <a mat-menu-item href="https://facebook.com" target="_blank">
+        <i
+class="fab fa-facebook fa-lg" style="color:rgb(66,103,178);"></i>
+    </a>
+    <a mat-menu-item href="https://instagram.com" target="_blank">
+        <i
+class="fab fa-instagram fa-lg" style="color:rgb(193,53,132);"></i>
+    </a>
+</mat-menu>
